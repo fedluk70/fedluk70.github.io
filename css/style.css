@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap'); */
 /* .bg-image{ 
      background-image: url("../img/waterfall2.jpg");
      height:75%;
@@ -28,4 +28,8 @@
      margin-top: 100px;
      padding: 20px;
      box-shadow: 0px 0px 10px ;
+}
+.navbar-brand{
+
+font-family: 'Pacifico', cursive;
 }
