@@ -9,229 +9,297 @@
      <link rel="stylesheet" href="./css/style.css">
       <script src="https://kit.fontawesome.com/5ce3dc7aad.js" crossorigin="anonymous"></script>
       <title>Final Project  </title>
+
 </head>
 <body>
-<header>
-      <!-- Navbar -->
+  
+  <header>
+    <style>
+      /* Carousel styling */
+      #SCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+      /* Height for devices larger than 576px */
+      @media (min-width: 800px) {
+        #SCarousel {
+          margin-top: -58.59px;
+        }
+        #SCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 50vh;
+        }
+      }
+
+      .navbar .nav-link {
+        color: rgb(214, 21, 21) !important;
+      }
+      .navbar {
+        background-color: rgb(207, 198, 197);
+      }
+    </style>
+
+    <!-- Navbar -->
+    
+<nav class="navbar navbar-expand-lg navbar-toggler d-none d-lg-block fixed-top" style="z-index: 2000;">
       
-  <nav class=" navbar navbar-expand-lg navbar-light bg-white fixed-top " style="margin-left: 40px;margin-right: 32px;">
-           >
-        <div class="container-fluid">
-          <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-mdb-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-           
-        <div class="collapse navbar-collapse" id="navbar" > 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-               <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-              </li>
-            </ul>
-            <form class="d-flex input-group w-auto">
-              <input type="search" class="form-control"placeholder="Type query" aria-label="Search"/>
-              <button class="btn btn-outline-primary"type="button"data-mdb-ripple-color="dark" > Search</button> 
-            </form>
+  <div class="container-fluid " >
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <i class="fas fa-bars"></i>
+   </button>
+    <div class="collapse navbar-collapse" id="navbar "></div>
+    
+        <!-- Navbar brand -->
+            <a class="navbar-brand nav-link" target="_blank" href=""> <strong>SunRise</strong></a>
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active ">
+            <a class="nav-link " aria-current="page" href="#S">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#S">Pricing</a>
+           </li>
+           <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#S">Products</a>
+            </li>
+          </ul>
+        <form class="d-flex input-group w-auto">
+          <input type="search" class="form-control"placeholder="Type query" aria-label="Search"/>
+          <button class="btn btn-outline-primary"type="button"data-mdb-ripple-color="dark" > Search</button> 
+        </form>
+        </div>
+    </nav>
+    
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/coffee.jpg" class="d-block w-100" alt="brew">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              
+              <div class="text-white">
+                <h1 class="mb-3">SunRise Coffee Shop</h1>
+                <h4 class="mb-3">Come & Relax</h4>
+                <a class="btn btn-outline-light btn-lg" href="#!" role="button"> Call to action</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-      <hr>
-   <div class="p-5 text-center bg-image" style=" background-image: url(img/coffee.jpg);height: 400px; margin-top: 60px; margin-left: 40px; margin-right: 40px;">
-     <div class="p-5 text-center bg-image">
-      <!-- <div class="mask" style="background-color: rgba(245, 226, 226, 0.6);"> -->
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3" >SunRise</h>
-            <h4 class="mb-3">Coffee Shop</h4>
-            <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+        <div class="carousel-item">
+          <img src="./img/farm.jpg" class="d-block w-100" alt="farm">
+          <div class="carousel-caption d-none d-md-block">
+            <h1> From Go.rgeous Farms</h1>
+            <p>Fresh , beautifull and tastefull coffee beans.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/waterfall 2.jpg" class="d-block w-100" alt="relax">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Amazing View</h1>
+            <p> We always make sure you are very relaxed in our place .</p>
           </div>
         </div>
       </div>
-     </div>
-  </header>
-  
-    
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-       <link rel="stylesheet" href="./css/style.css">
-        <script src="https://kit.fontawesome.com/5ce3dc7aad.js" crossorigin="anonymous"></script>
-        <title>Final Project  </title>
-  </head>
-  <body>
-  <header>
-        <!-- Navbar -->
-        
-    <nav class=" navbar navbar-expand-lg navbar-light bg-white fixed-top " style="margin-left: 40px;margin-right: 32px;">
-             >
-          <div class="container-fluid">
-            <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-mdb-toggle="collapse"
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-             
-          <div class="collapse navbar-collapse" id="navbar" > 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                 <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">contact</a>
-                </li>
-              </ul>
-              <form class="d-flex input-group w-auto">
-                <input type="search" class="form-control"placeholder="Type query" aria-label="Search"/>
-                <button class="btn btn-outline-primary"type="button"data-mdb-ripple-color="dark" > Search</button> 
-              </form>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+   </header>
+   <hr>
+   <section>
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+          
+              <img src="img/taste of varities.jpg" class="img-fluid" />
+              
             </div>
           </div>
-        </nav>
-        <hr>
-     <div class="p-5 text-center bg-image" style=" background-image: url(img/coffee.jpg);height: 400px; margin-top: 60px; margin-left: 40px; margin-right: 40px;">
-       <div class="p-5 text-center bg-image">
-        <!-- <div class="mask" style="background-color: rgba(245, 226, 226, 0.6);"> -->
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3" >SunRise</h>
-              <h4 class="mb-3">Coffee Shop</h4>
-              <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>The best place to relax </strong></h4>
+            <p class="text-muted">
+              We serve different varities of coffee beans and coffee menues.
+            </p>
+            <p><strong>We always prioritize for the quality</strong></p>
+            <p class="text-muted">We open every day until mid night.</p>
+            
+          <div class="py-4 text-lg-start">
+              <h5>Drinking coffee has many health benefit </h5>
+              <a
+                role="button"
+                class="btn btn-primary btn-lg m-2"
+                href="https://www.youtube.com/watch?v=69kXcsl0NgA"
+                rel="nofollow"
+                target="_blank" > Learn More </a>
+             </div>
+          </div>
+          </div>
+        </main>
+        </section>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>The collection of our best coffee beans</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/three.jpg"class="img-fluid rounded-circle"/><a href="#!">
+                
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Brazilian</h5>
+                <p class="card-text"> always tastes good </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/one.jpg"class="img-fluid rounded-circle"><a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title ">Ethiopian</h5>
+                <p class="card-text"> Always preferable </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="img/two.jpg" class="img-fluid rounded-circle"/><a href="#!">
+
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div> </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Arebica</h5>
+                <p class="card-text">One of the best choice of the people</p>
+               
+              </div>
             </div>
           </div>
         </div>
-       </div>
-    </header>
-    
-<footer class="text-center text-lg-start bg-light text-muted " >
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on Social networks:</span>
-    </div>
-    <!-- Left -->
+      </section>
+      <hr class="my-5" />
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
+      <!-- contact form -->
+   <Section>
+      <div class="container contact-form text-dark" style="background-color:rgb(221, 221, 205) ;">
+        <h1>Contact Form</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-3 text-dark">
+                <address>Sun Set district SF CA ,94111 US </address>
+                <p>email: feddy@gmail.com</p>
+                <p>phone:- 415 333 3030</p>
+                
+           </div>
+           <div class="col-md-3">
+               <div class="form-group">
+                   <label>name</label>
+                   <input type="text" class="form-control">
+               </div>
+                    <label>email</label>
+                    <input type="text" class="form-control">
+
+                    <label>message</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                    <div class="form-group">
+                    <button class=" btn btn-primary btn-block ">send</button>
+                </div>
+             </div>
+         </div>
+    </section>
+     <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Us</p>
+            <a href="https://www.youtube.com/watch?v=69kXcsl0NgA" class="btn btn-primary m-1" role="button"
+       rel="nofollow" target="_blank" ><i class="fab fa-youtube"></i> </a>
+
+       <a
+              href="https://"
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="" class="me-4 text-reset">
+            <a
+              href=""
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
         <i class="fab fa-twitter"></i>
       </a>
-     
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset background-color: red">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
+       <a
+              href=" https://fedluk70.github.io/"
+              class="btn btn-primary m-1"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+            >
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5" style="background-color:rgb(231, 226, 226) ;">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase t fw-bold mb-4"><i class="fas fa-gem me-3 "></i>SunRise Coffee </h6>
-          <p>
-            Well organised and a great coffee shop. We looking for the best quality and amzing cutomer service experience.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Products </h6>
-          <p>
-            <a href="#!" class="text-reset"> Brewed coffee</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Roasted coffee beans </a>
-          </p>
-         
-        </div>
-        <!-- Grid column -->
-
-    
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4"> Useful links </h6>
-          <p>
-            <a href="" class="text-reset">Pricing</a>
-          </p>
-          
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          
-          <h6 class="text-uppercase fw-bold mb-4"> Contact </h6>
-          <p><i class="fas fa-home me-3"></i> Sun set SF, CA 94111, US</p>
-          <p><i class="fas fa-envelope me-3"></i> feddy@gmail.com </p>
-          <p><i class="fas fa-phone me-3"></i> 415 333 3030</p>
-          
-        </div>
-      </div>
-      
+    <!-- Copyright -->
+     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2020 Copyright:
+      <a class="text-dark" href="https://feddy.com/">feddy.com</a>
     </div>
-  </section>
-   <div class="text-center p-4 " style="background-color: rgba(201, 11, 11, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://Fedluk.com/">Fedluk.com</a>
-  </div>
-</footer>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+  </footer>
   
-  </body>
-  </html>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
    
 
